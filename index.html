@@ -58,10 +58,10 @@
             <div class="wrapper">
               <!-- load markdown file here -->
                 {% if is_logged %} {% if is_404 %}
-                <a href="{{ base_url }}/admin/create?path={{ current_url }}"
+                <a href="{{ current_page.url }}?edit"
                     target="_blank" class="admin create">Create</a>
                 {% else %}
-                <a href="{{ base_url }}/admin/edit?path={{ current_page.url }}"
+                <a href="{{ current_page.url }}?edit"
                     target="_blank" class="admin edit">Edit</a>
                 {% endif %} {% endif %}
                 {% spaceless %}

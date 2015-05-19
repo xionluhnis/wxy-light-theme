@@ -79,12 +79,25 @@ body {
     margin: 0 auto;
 }
 #content .wrapper {
+    position: relative;
     margin: 0px auto;
     padding: 0px 50px 2em;
     max-width: 700px;
     text-align: left;
     background: white;
     box-shadow: 0 5px 25px white;
+}
+/* admin link */
+#content a.admin {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15.5px;
+    right: 0px;
+    border-radius: 50px 0 0 50px;
+}
+#content a.admin:hover {
+    background: #5BF;
+    color: white;
 }
 #content li {
     list-style: url(../images/arrow.png);
